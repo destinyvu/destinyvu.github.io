@@ -5,88 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IMVU Ürün Vitrini</title>
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f12;
-      color: #f4f4f5;
-    }
-    .age-gate {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.92);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-      padding: 24px;
-    }
-    .age-box {
-      max-width: 520px;
-      width: 100%;
-      background: #18181b;
-      border: 1px solid #2a2a32;
-      border-radius: 18px;
-      padding: 28px;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
-    }
-    .age-box h1 { margin-top: 0; font-size: 28px; }
-    .age-box p { color: #c9c9cf; line-height: 1.6; }
-    .buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: 0.2s ease;
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary { background: #ffffff; color: #111; }
-    .btn-secondary { background: #27272a; color: #fff; }
-    .btn:hover { transform: translateY(-1px); }
-    header {
-      padding: 48px 20px 28px;
-      text-align: center;
-      border-bottom: 1px solid #232329;
-      background: linear-gradient(180deg, #16161c 0%, #101014 100%);
-    }
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 38px;
-    }
-    header p {
-      margin: 0 auto;
-      max-width: 700px;
-      color: #b8b8c2;
-      line-height: 1.7;
-    }
-    .container {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 28px 20px 60px;
-    }
-    .section-title {
-      margin: 34px 0 18px;
-      font-size: 24px;
-      border-left: 4px solid #fff;
-      padding-left: 12px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
-    }
- .card {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f12;
+  color: #f4f4f5;
+}
+
+/* HEADER */
+header {
+  padding: 50px 20px 30px;
+  text-align: center;
+  border-bottom: 1px solid #232329;
+  background: linear-gradient(180deg, #16161c 0%, #101014 100%);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  margin-top: 10px;
+  color: #b8b8c2;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
   background: #18181d;
   border: 1px solid #2f2f38;
   border-radius: 20px;
@@ -99,28 +70,32 @@
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
-    }
-   .media {
+
+/* MEDIA */
+.media {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
   border-bottom: 1px solid #2a2a32;
 }
-    .card-content {
-      padding: 18px;
-    }
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
-    }
-    .card p {
-      margin: 0 0 16px;
-      color: #bfc0c7;
-      line-height: 1.6;
-      font-size: 14px;
-    }
-   .link-btn {
+
+/* CONTENT */
+.card-content {
+  padding: 18px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  color: #bfc0c7;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.link-btn {
   display: inline-block;
   text-decoration: none;
   background: linear-gradient(135deg, #ffffff, #cfcfcf);
@@ -128,6 +103,7 @@
   padding: 10px 16px;
   border-radius: 12px;
   font-weight: 700;
+  margin-top: 10px;
   transition: 0.2s ease;
 }
 
@@ -135,19 +111,47 @@
   transform: scale(1.05);
   background: #ffffff;
 }
-    footer {
-      border-top: 1px solid #232329;
-      color: #9c9ca6;
-      text-align: center;
-      padding: 22px;
-      font-size: 14px;
-    }
-    .note {
-      margin-top: 10px;
-      font-size: 12px;
-      color: #8f9098;
-    }
-  </style>
+
+/* AGE GATE */
+.age-gate {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.age-box {
+  background: #18181b;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.age-box h1 {
+  margin-top: 0;
+}
+
+.age-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+</style>
 </head>
 <body>
   <div class="age-gate" id="ageGate">
