@@ -1,18 +1,20 @@
-```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DESTINY SHOP</title>
-
 <style>
 *{box-sizing:border-box}
 
 body{
   margin:0;
-  background:#050009;
   font-family:Arial,sans-serif;
+  color:#fff;
+  background:
+    radial-gradient(circle at top left,rgba(255,0,170,.28),transparent 35%),
+    radial-gradient(circle at top right,rgba(139,92,246,.25),transparent 35%),
+    linear-gradient(135deg,#050009,#120018,#050009);
 }
 
 .age-gate{
@@ -26,15 +28,16 @@ body{
 }
 
 .age-box{
+  max-width:420px;
   background:#160020;
-  color:white;
   border:1px solid #ff4fd8;
   box-shadow:0 0 35px rgba(255,79,216,.5);
   border-radius:22px;
   padding:30px;
   text-align:center;
-  max-width:420px;
 }
+
+.age-box p{color:#e8c7ff;line-height:1.5}
 
 .age-box button,.age-box a{
   display:inline-block;
@@ -53,62 +56,125 @@ body{
 }
 
 .age-box a{
-  background:#21102d;
+  background:#24102d;
   color:white;
 }
 
-.page{
-  width:100%;
-  min-height:100vh;
-  padding:20px 10px;
-  background:
-    radial-gradient(circle at top left,rgba(255,0,170,.25),transparent 35%),
-    radial-gradient(circle at top right,rgba(139,92,246,.28),transparent 35%),
-    linear-gradient(135deg,#050009,#130019,#050009);
+header{
+  max-width:1500px;
+  margin:24px auto 0;
+  padding:0 14px;
 }
 
-.showcase{
-  position:relative;
-  width:min(1600px,100%);
-  aspect-ratio:16/9;
+.banner{
+  width:100%;
+  display:block;
+  border-radius:22px;
+  border:1px solid rgba(255,79,216,.65);
+  box-shadow:
+    0 0 25px rgba(255,79,216,.65),
+    0 0 65px rgba(139,92,246,.45);
+}
+
+.container{
+  max-width:1350px;
   margin:auto;
-  background:url("layout.png") center/contain no-repeat;
-  filter:drop-shadow(0 0 25px rgba(255,79,216,.55));
+  padding:35px 18px 55px;
 }
 
-.video-box{
-  position:absolute;
+.section-title{
+  text-align:center;
+  margin:35px 0 28px;
+  color:#ffb6f1;
+  font-size:28px;
+  letter-spacing:3px;
+  text-shadow:
+    0 0 12px rgba(255,79,216,.9),
+    0 0 30px rgba(139,92,246,.6);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:28px;
+}
+
+.card{
+  background:rgba(18,4,28,.86);
+  border:1px solid rgba(255,79,216,.55);
+  border-radius:22px;
   overflow:hidden;
-  background:#000;
-  border-radius:10px;
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.65),
+    0 0 18px rgba(255,79,216,.35);
+  transition:.3s ease;
 }
 
-.video-box video{
+.card:hover{
+  transform:translateY(-7px) scale(1.02);
+  border-color:#ff6fe3;
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.75),
+    0 0 30px rgba(255,79,216,.75),
+    0 0 55px rgba(139,92,246,.45);
+}
+
+.media{
   width:100%;
-  height:100%;
+  aspect-ratio:16/9;
   object-fit:cover;
   display:block;
+  background:#000;
+  border-bottom:1px solid rgba(255,79,216,.35);
 }
 
-/* ODA VİDEOLARI */
-.room1{left:2.45%;top:45.7%;width:13.75%;height:14.35%}
-.room2{left:18.5%;top:45.7%;width:13.75%;height:14.35%}
-.room3{left:34.6%;top:45.7%;width:13.75%;height:14.35%}
-.room4{left:50.65%;top:45.7%;width:13.75%;height:14.35%}
-.room5{left:66.75%;top:45.7%;width:13.75%;height:14.35%}
-.room6{left:82.8%;top:45.7%;width:13.75%;height:14.35%}
+.card-content{
+  padding:18px;
+}
 
-/* ALPHA VENOM */
-.product1{left:2.55%;top:75.25%;width:15.3%;height:14.4%}
+.card h3{
+  margin:0 0 10px;
+  color:#fff;
+  text-shadow:0 0 14px rgba(255,79,216,.75);
+}
 
-@media(max-width:800px){
-  .page{
-    padding:8px 4px;
-  }
+.card p{
+  margin:0;
+  color:#e5c9f6;
+  font-size:14px;
+  line-height:1.5;
+}
 
-  .video-box{
-    border-radius:4px;
-  }
+.product-wrap{
+  max-width:650px;
+  margin:auto;
+}
+
+footer{
+  text-align:center;
+  padding:35px 20px;
+  color:#ffc9f3;
+  font-size:34px;
+  font-weight:bold;
+  text-shadow:
+    0 0 12px rgba(255,79,216,.9),
+    0 0 35px rgba(139,92,246,.7);
+}
+
+.footer-small{
+  display:block;
+  margin-top:8px;
+  font-size:13px;
+  letter-spacing:3px;
+  color:#e8c7ff;
+}
+
+@media(max-width:700px){
+  header{margin-top:12px;padding:0 8px}
+  .banner{border-radius:14px}
+  .container{padding:25px 12px}
+  .section-title{font-size:21px}
+  footer{font-size:26px}
 }
 </style>
 </head>
@@ -127,53 +193,94 @@ body{
   </div>
 </div>
 
-<div class="page">
-  <div class="showcase">
+<header>
+  <img class="banner" src="banner2.png" alt="DESTINY SHOP">
+</header>
 
-    <div class="video-box room1">
-      <video controls muted loop playsinline>
+<main class="container">
+  <h2 class="section-title">✨ ROOM COLLECTION ✨</h2>
+
+  <section class="grid">
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="room1.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Modern Room</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
 
-    <div class="video-box room2">
-      <video controls muted loop playsinline>
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="room2.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Peace Room</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
 
-    <div class="video-box room3">
-      <video controls muted loop playsinline>
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="room3.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Netflix Room</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
 
-    <div class="video-box room4">
-      <video controls muted loop playsinline>
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="room4.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Dreams & Sunset</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
 
-    <div class="video-box room5">
-      <video controls muted loop playsinline>
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="lastdinner.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Last Dinner Room</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
 
-    <div class="video-box room6">
-      <video controls muted loop playsinline>
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="modernroomv2.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Modern Room V2</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
+  </section>
 
-    <div class="video-box product1">
-      <video controls muted loop playsinline>
+  <h2 class="section-title">💎 EXCLUSIVE PRODUCT 💎</h2>
+
+  <section class="product-wrap">
+    <article class="card">
+      <video class="media" controls muted loop playsinline>
         <source src="product1.mp4" type="video/mp4">
       </video>
-    </div>
+      <div class="card-content">
+        <h3>Alpha Venom</h3>
+        <p>Works on IMVU PC and IMVU Mobile<br>You need to use this product only in private.</p>
+      </div>
+    </article>
+  </section>
+</main>
 
-  </div>
-</div>
+<footer>
+  Destiny Shop ♡
+  <span class="footer-small">EXCLUSIVE IMVU COLLECTION</span>
+</footer>
 
 <script>
 function enterSite(){
@@ -183,4 +290,3 @@ function enterSite(){
 
 </body>
 </html>
-```
