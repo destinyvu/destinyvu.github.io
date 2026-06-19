@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -11,7 +12,6 @@
 body{
   margin:0;
   background:#050009;
-  color:white;
   font-family:Arial,sans-serif;
 }
 
@@ -26,13 +26,14 @@ body{
 }
 
 .age-box{
-  max-width:420px;
   background:#160020;
+  color:white;
   border:1px solid #ff4fd8;
   box-shadow:0 0 35px rgba(255,79,216,.5);
   border-radius:22px;
   padding:30px;
   text-align:center;
+  max-width:420px;
 }
 
 .age-box button,.age-box a{
@@ -59,7 +60,7 @@ body{
 .page{
   width:100%;
   min-height:100vh;
-  padding:25px 10px 50px;
+  padding:20px 10px;
   background:
     radial-gradient(circle at top left,rgba(255,0,170,.25),transparent 35%),
     radial-gradient(circle at top right,rgba(139,92,246,.28),transparent 35%),
@@ -68,22 +69,18 @@ body{
 
 .showcase{
   position:relative;
-  width:min(1500px,100%);
+  width:min(1600px,100%);
   aspect-ratio:16/9;
   margin:auto;
-  background:url("banner.png") center/contain no-repeat;
-  filter:drop-shadow(0 0 25px rgba(255,79,216,.6));
+  background:url("layout.png") center/contain no-repeat;
+  filter:drop-shadow(0 0 25px rgba(255,79,216,.55));
 }
 
 .video-box{
   position:absolute;
-  border:1px solid rgba(255,79,216,.9);
-  border-radius:10px;
   overflow:hidden;
   background:#000;
-  box-shadow:
-    0 0 14px rgba(255,79,216,.6),
-    0 0 28px rgba(139,92,246,.35);
+  border-radius:10px;
 }
 
 .video-box video{
@@ -93,41 +90,24 @@ body{
   display:block;
 }
 
-/* ODA KUTULARI */
-.room1{left:3.6%;top:53.4%;width:13.2%;height:16.2%}
-.room2{left:19.1%;top:53.4%;width:13.2%;height:16.2%}
-.room3{left:34.5%;top:53.4%;width:13.2%;height:16.2%}
-.room4{left:50.2%;top:53.4%;width:13.2%;height:16.2%}
-.room5{left:65.8%;top:53.4%;width:13.2%;height:16.2%}
-.room6{left:81.2%;top:53.4%;width:13.2%;height:16.2%}
+/* ODA VİDEOLARI */
+.room1{left:2.45%;top:45.7%;width:13.75%;height:14.35%}
+.room2{left:18.5%;top:45.7%;width:13.75%;height:14.35%}
+.room3{left:34.6%;top:45.7%;width:13.75%;height:14.35%}
+.room4{left:50.65%;top:45.7%;width:13.75%;height:14.35%}
+.room5{left:66.75%;top:45.7%;width:13.75%;height:14.35%}
+.room6{left:82.8%;top:45.7%;width:13.75%;height:14.35%}
 
-/* DİĞER ÜRÜN */
-.product1{left:3.7%;top:85.4%;width:13.1%;height:11.6%}
-
-.mobile-list{
-  display:none;
-}
-
-footer{
-  text-align:center;
-  padding:25px;
-  color:#ffc9f3;
-  text-shadow:0 0 18px #ff4fd8;
-  font-size:24px;
-  font-weight:bold;
-}
+/* ALPHA VENOM */
+.product1{left:2.55%;top:75.25%;width:15.3%;height:14.4%}
 
 @media(max-width:800px){
-  .showcase{
-    aspect-ratio:16/9;
+  .page{
+    padding:8px 4px;
   }
 
   .video-box{
-    border-radius:5px;
-  }
-
-  footer{
-    font-size:18px;
+    border-radius:4px;
   }
 }
 </style>
@@ -193,10 +173,6 @@ footer{
     </div>
 
   </div>
-
-  <footer>
-    ✨ Destiny Shop ✨
-  </footer>
 </div>
 
 <script>
@@ -207,3 +183,4 @@ function enterSite(){
 
 </body>
 </html>
+```
