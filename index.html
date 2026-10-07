@@ -33,155 +33,876 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:30px 18px 42px;color:#
 @media(max-width:1050px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tools-grid{grid-template-columns:1fr}}@media(max-width:820px){.nav{align-items:flex-start;flex-direction:column}.tabs{width:100%;overflow:auto;justify-content:flex-start}.tab-btn{white-space:nowrap}.hero-main{padding:38px 28px}.page{padding-top:28px}}@media(max-width:650px){.nav-wrap{padding:10px}.brand{font-size:13px}.brand-mark{width:28px;height:28px}.page{padding-left:12px;padding-right:12px}.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.hero h1{font-size:46px}.hero-main{padding:30px 22px}.tool-top{align-items:flex-start}.tool-actions{justify-content:stretch}.tool-actions .btn{width:100%}.footer-inner{align-items:flex-start;flex-direction:column}.footer-note{text-align:left}}
 </style>
 </head>
+
 <body>
-<div class="age-gate" id="ageGate"><div class="age-box"><div class="age-logo"><span class="age-dot"></span> DESTINY SHOP</div><h1>Adults Only</h1><p>This website contains adult-oriented IMVU content.<br>By entering, you confirm that you are at least 18 years old.</p><div class="age-actions"><button class="btn btn-primary" onclick="enterSite()">ENTER SHOP</button><a class="btn btn-ghost" href="https://google.com">LEAVE</a></div></div></div>
-<div class="nav-wrap"><nav class="nav"><div class="brand"><span class="brand-mark"></span>DESTINY SHOP</div><div class="tabs"><button class="tab-btn active" data-page="home">HOME</button><button class="tab-btn" data-page="rooms">ROOMS</button><button class="tab-btn" data-page="triggers">TRIGGERS</button><button class="tab-btn" data-page="poses">POSES</button><button class="tab-btn" data-page="tools">TOOLS</button></div></nav></div>
-<main>
-<section class="page active" id="home"><div class="hero"><div class="hero-main"><span class="kicker"><i></i> PREMIUM IMVU CREATIONS</span><h1><span class="gradient-text">DESTINY SHOP</span></h1><p>Exclusive IMVU rooms, poses, triggers and creator tools — presented in one premium collection.</p><div class="hero-actions"><button class="btn btn-primary" onclick="showPage('rooms')">EXPLORE PRODUCTS</button><button class="btn btn-ghost" onclick="showPage('tools')">CREATOR TOOLS</button></div></div><div class="hero-side"><div class="mini-card"><div class="mini-icon">01</div><strong>ROOMS</strong><span>Atmospheric rooms built for PC and mobile IMVU.</span></div><div class="mini-card"><div class="mini-icon">02</div><strong>POSES & TRIGGERS</strong><span>Separate collections with dedicated tabs.</span></div><div class="mini-card"><div class="mini-icon">03</div><strong>CREATOR TOOLS</strong><span>Windows utilities made for IMVU creators.</span></div></div></div><div class="section-head"><div><h2>Featured Releases</h2><p>Selected products from the DESTINY SHOP collection.</p></div><span class="count">FEATURED</span></div><div class="grid"><article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="modernroomv2.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Modern Room V2</h3><p>Modern atmosphere with a polished premium presentation.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article><article class="card"><div class="media-wrap"><img class="media" src="luxegoldenroom.png" alt="Luxe Golden Room"><span class="badge">ROOM</span></div><div class="card-body"><h3>Luxe Golden Room</h3><p>Warm lighting, golden details and a luxury room atmosphere.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article></div></section>
-<section class="page" id="rooms"><span class="kicker"><i></i> DESTINY COLLECTION</span><div class="section-head" style="margin-top:18px"><div><h2>Explore Rooms</h2><p>Premium IMVU room collection.</p></div><span class="count">8 PRODUCTS</span></div><div class="grid">
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="room1.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Modern Room</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="room2.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Peace Room</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="room3.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Netflix Room</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><img class="media" src="darknetflix.png" alt="Dark Netflix Room"><span class="badge">ROOM</span></div><div class="card-body"><h3>Dark Netflix</h3><p>Dark neon atmosphere intentionally designed with low lighting.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="room4.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Dreams & Sunset</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="lastdinner.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Last Dinner Room</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><video class="media" controls muted loop playsinline preload="metadata"><source src="modernroomv2.mp4" type="video/mp4"></video><span class="badge">ROOM</span></div><div class="card-body"><h3>Modern Room V2</h3><p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-<article class="card"><div class="media-wrap"><img class="media" src="luxegoldenroom.png" alt="Luxe Golden Room"><span class="badge">ROOM</span></div><div class="card-body"><h3>Luxe Golden Room</h3><p>Luxurious golden atmosphere with warm lights and modern room design.</p><div class="meta"><span>PC</span><span>MOBILE</span></div></div></article>
-</div></section>
-<section class="page" id="triggers">
-<span class="kicker"><i></i> TRIGGER COLLECTION</span>
-<div class="section-head" style="margin-top:18px">
-  <div>
-    <h2>Explore Triggers</h2>
-    <p>Exclusive IMVU trigger collection.</p>
+
+<div class="age-gate" id="ageGate">
+  <div class="age-box">
+    <div class="age-logo">
+      <span class="age-dot"></span>
+      DESTINY SHOP
+    </div>
+
+    <h1>Adults Only</h1>
+
+    <p>
+      This website contains adult-oriented IMVU content.<br>
+      By entering, you confirm that you are at least 18 years old.
+    </p>
+
+    <div class="age-actions">
+      <button class="btn btn-primary" onclick="enterSite()">ENTER SHOP</button>
+      <a class="btn btn-ghost" href="https://google.com">LEAVE</a>
+    </div>
   </div>
-  <span class="count">4 PRODUCTS</span>
 </div>
+
+<div class="nav-wrap">
+<nav class="nav">
+
+<div class="brand">
+  <span class="brand-mark"></span>
+  DESTINY SHOP
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-page="home">HOME</button>
+  <button class="tab-btn" data-page="rooms">ROOMS</button>
+  <button class="tab-btn" data-page="triggers">TRIGGERS</button>
+  <button class="tab-btn" data-page="poses">POSES</button>
+  <button class="tab-btn" data-page="tools">TOOLS</button>
+</div>
+
+</nav>
+</div>
+
+<main>
+
+<section class="page active" id="home">
+
+<div class="hero">
+
+<div class="hero-main">
+
+<span class="kicker">
+<i></i>
+PREMIUM IMVU CREATIONS
+</span>
+
+<h1>
+<span class="gradient-text">DESTINY SHOP</span>
+</h1>
+
+<p>
+Exclusive IMVU rooms, poses, triggers and creator tools — presented in one premium collection.
+</p>
+
+<div class="hero-actions">
+<button class="btn btn-primary" onclick="showPage('rooms')">EXPLORE PRODUCTS</button>
+<button class="btn btn-ghost" onclick="showPage('tools')">CREATOR TOOLS</button>
+</div>
+
+</div>
+
+<div class="hero-side">
+
+<div class="mini-card">
+<div class="mini-icon">01</div>
+<strong>ROOMS</strong>
+<span>Atmospheric rooms built for PC and mobile IMVU.</span>
+</div>
+
+<div class="mini-card">
+<div class="mini-icon">02</div>
+<strong>POSES & TRIGGERS</strong>
+<span>Separate collections with dedicated tabs.</span>
+</div>
+
+<div class="mini-card">
+<div class="mini-icon">03</div>
+<strong>CREATOR TOOLS</strong>
+<span>Windows utilities made for IMVU creators.</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="section-head">
+<div>
+<h2>Featured Releases</h2>
+<p>Selected products from the DESTINY SHOP collection.</p>
+</div>
+<span class="count">FEATURED</span>
+</div>
+
 <div class="grid">
 
-  <article class="card">
-    <div class="media-wrap">
-      <video class="media" controls muted loop playsinline preload="metadata">
-        <source src="product1.mp4" type="video/mp4">
-      </video>
-      <span class="badge">TRIGGER</span>
-    </div>
-    <div class="card-body">
-      <h3>Alpha Venom</h3>
-      <p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
-      <div class="meta"><span>PC</span><span>MOBILE</span></div>
-    </div>
-  </article>
+<article class="card">
+<div class="media-wrap">
 
-  <article class="card">
-    <div class="media-wrap">
-      <video class="media" controls muted loop playsinline preload="metadata">
-        <source src="alpha-kong.mp4" type="video/mp4">
-      </video>
-      <span class="badge">TRIGGER</span>
-    </div>
-    <div class="card-body">
-      <h3>Alpha Kong</h3>
-      <p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
-      <div class="meta"><span>PC</span><span>MOBILE</span></div>
-    </div>
-  </article>
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="modernroomv2.mp4" type="video/mp4">
+</video>
 
-  <article class="card">
-    <div class="media-wrap">
-      <img class="media" src="monster-kong.png" alt="Monster Kong">
-      <span class="badge">TRIGGER</span>
-    </div>
-    <div class="card-body">
-      <h3>Monster Kong</h3>
-      <p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
-      <div class="meta"><span>PC</span><span>MOBILE</span></div>
-    </div>
-  </article>
+<span class="badge">ROOM</span>
 
-  <article class="card">
-    <div class="media-wrap">
-      <img class="media" src="relax-kong.png" alt="Relax Kong">
-      <span class="badge">TRIGGER</span>
-    </div>
-    <div class="card-body">
-      <h3>Relax Kong</h3>
-      <p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
-      <div class="meta"><span>PC</span><span>MOBILE</span></div>
-    </div>
-  </article>
+</div>
+
+<div class="card-body">
+<h3>Modern Room V2</h3>
+<p>Modern atmosphere with a polished premium presentation.</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+</article>
+
+<article class="card">
+
+<div class="media-wrap">
+<img class="media" src="luxegoldenroom.png" alt="Luxe Golden Room">
+<span class="badge">ROOM</span>
+</div>
+
+<div class="card-body">
+<h3>Luxe Golden Room</h3>
+<p>Warm lighting, golden details and a luxury room atmosphere.</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+</article>
+
+</div>
+
+</section>
+
+
+<section class="page" id="rooms">
+
+<span class="kicker">
+<i></i>
+DESTINY COLLECTION
+</span>
+
+<div class="section-head" style="margin-top:18px">
+
+<div>
+<h2>Explore Rooms</h2>
+<p>Premium IMVU room collection.</p>
+</div>
+
+<span class="count">8 PRODUCTS</span>
+
+</div>
+
+<div class="grid">
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="room1.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Modern Room</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="room2.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Peace Room</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="room3.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Netflix Room</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<img class="media" src="darknetflix.png" alt="Dark Netflix Room">
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Dark Netflix</h3>
+<p>Dark neon atmosphere intentionally designed with low lighting.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="room4.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Dreams & Sunset</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="lastdinner.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Last Dinner Room</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="modernroomv2.mp4" type="video/mp4">
+</video>
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Modern Room V2</h3>
+<p>Works on IMVU PC and IMVU Mobile. Private use recommended.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
+
+
+<article class="card">
+<div class="media-wrap">
+<img class="media" src="luxegoldenroom.png" alt="Luxe Golden Room">
+<span class="badge">ROOM</span>
+</div>
+<div class="card-body">
+<h3>Luxe Golden Room</h3>
+<p>Luxurious golden atmosphere with warm lights and modern room design.</p>
+<div class="meta"><span>PC</span><span>MOBILE</span></div>
+</div>
+</article>
 
 </div>
 </section>
+
+
+<section class="page" id="triggers">
+
+<span class="kicker">
+<i></i>
+TRIGGER COLLECTION
+</span>
+
+<div class="section-head" style="margin-top:18px">
+
+<div>
+<h2>Explore Triggers</h2>
+<p>Exclusive IMVU trigger collection.</p>
+</div>
+
+<span class="count">4 PRODUCTS</span>
+
+</div>
+
+<div class="grid">
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="product1.mp4" type="video/mp4">
+</video>
+
+<span class="badge">TRIGGER</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Alpha Venom</h3>
+
+<p>
+Works on IMVU PC and IMVU Mobile. Private use recommended.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="alpha-kong.mp4" type="video/mp4">
+</video>
+
+<span class="badge">TRIGGER</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Alpha Kong</h3>
+
+<p>
+Works on IMVU PC and IMVU Mobile. Private use recommended.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<img class="media" src="monster-kong.png" alt="Monster Kong">
+
+<span class="badge">TRIGGER</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Monster Kong</h3>
+
+<p>
+Works on IMVU PC and IMVU Mobile. Private use recommended.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<img class="media" src="relax-kong.png" alt="Relax Kong">
+
+<span class="badge">TRIGGER</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Relax Kong</h3>
+
+<p>
+Works on IMVU PC and IMVU Mobile. Private use recommended.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- POSES -->
+
 <section class="page" id="poses">
-<span class="kicker"><i></i> POSE COLLECTION</span>
+
+<span class="kicker">
+<i></i>
+POSE COLLECTION
+</span>
+
 <div class="section-head" style="margin-top:18px">
-  <div><h2>Poses</h2></div>
+
+<div>
+<h2>Explore Poses</h2>
+<p>Exclusive romantic IMVU pose collection.</p>
 </div>
-<div class="empty">
-  <h3>COMING SOON</h3>
+
+<span class="count">7 PRODUCTS</span>
+
 </div>
+
+
+<div class="grid">
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="romantic-pose.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Romantic Pose</h3>
+
+<p>
+Romantic couple pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="romantic-pose-v1.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Romantic Pose V1</h3>
+
+<p>
+Romantic couple pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="romantic-pose-v2.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Romantic Pose V2</h3>
+
+<p>
+Romantic couple pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="endless-love.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Endless Love</h3>
+
+<p>
+Romantic couple pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="loving-kiss.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Loving Kiss</h3>
+
+<p>
+Romantic kiss pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="sweet-dreams.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Sweet Dreams</h3>
+
+<p>
+Romantic couple pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="card">
+
+<div class="media-wrap">
+
+<video class="media" controls muted loop playsinline preload="metadata">
+<source src="romantic-cuddle.mp4" type="video/mp4">
+</video>
+
+<span class="badge">POSE</span>
+
+</div>
+
+<div class="card-body">
+
+<h3>Romantic Cuddle</h3>
+
+<p>
+Romantic cuddle pose for IMVU.
+</p>
+
+<div class="meta">
+<span>PC</span>
+<span>MOBILE</span>
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
 </section>
+
+
+
 <section class="page" id="tools">
-<span class="kicker"><i></i> WINDOWS SOFTWARE</span>
+
+<span class="kicker">
+<i></i>
+WINDOWS SOFTWARE
+</span>
+
 <div class="section-head" style="margin-top:18px">
-  <div>
-    <h2>Creator Tools</h2>
-    <p>Premium Windows utilities built for the DESTINY SHOP creator workflow.</p>
-  </div>
-  <span class="count">2 AVAILABLE</span>
+
+<div>
+<h2>Creator Tools</h2>
+<p>Premium Windows utilities built for the DESTINY SHOP creator workflow.</p>
 </div>
+
+<span class="count">2 AVAILABLE</span>
+
+</div>
+
 
 <div class="tools-grid">
-  <article class="tool-card">
-    <div class="tool-preview">
-      <img src="tool-converter.png" alt="IMVU CHKN Converter v4.1">
-      <span class="badge">WINDOWS TOOL</span>
-    </div>
-    <div class="tool-info">
-      <div class="tool-top">
-        <div class="tool-icon">CH</div>
-        <div class="tool-copy">
-          <h3>IMVU CHKN Converter v4.1</h3>
-          <p>Convert supported IMVU CHKN / Cal3D assets into readable formats while safely preserving unsupported data.</p>
-          <div class="meta"><span>WINDOWS 10/11</span><span>64-BIT</span><span>v4.1</span></div>
-        </div>
-      </div>
-      <div class="tool-actions">
-        <button class="btn btn-primary">DETAILS</button>
-      </div>
-    </div>
-  </article>
 
-  <article class="tool-card">
-    <div class="tool-preview">
-      <img src="tool-downloader.png" alt="DESTINY SHOP Premium CHKN Downloader">
-      <span class="badge">WINDOWS TOOL</span>
-    </div>
-    <div class="tool-info">
-      <div class="tool-top">
-        <div class="tool-icon">DL</div>
-        <div class="tool-copy">
-          <h3>Premium CHKN Downloader</h3>
-          <p>Discover product revisions, download CHKN packages and extract product media from one focused desktop tool.</p>
-          <div class="meta"><span>WINDOWS 10/11</span><span>64-BIT</span><span>v1.0</span></div>
-        </div>
-      </div>
-      <div class="tool-actions">
-        <button class="btn btn-primary">DETAILS</button>
-      </div>
-    </div>
-  </article>
+
+<article class="tool-card">
+
+<div class="tool-preview">
+
+<img src="tool-converter.png" alt="IMVU CHKN Converter v4.1">
+
+<span class="badge">WINDOWS TOOL</span>
+
 </div>
+
+
+<div class="tool-info">
+
+<div class="tool-top">
+
+<div class="tool-icon">
+CH
+</div>
+
+<div class="tool-copy">
+
+<h3>IMVU CHKN Converter v4.1</h3>
+
+<p>
+Convert supported IMVU CHKN / Cal3D assets into readable formats while safely preserving unsupported data.
+</p>
+
+<div class="meta">
+<span>WINDOWS 10/11</span>
+<span>64-BIT</span>
+<span>v4.1</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tool-actions">
+
+<button class="btn btn-primary">
+DETAILS
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+
+<article class="tool-card">
+
+<div class="tool-preview">
+
+<img src="tool-downloader.png" alt="DESTINY SHOP Premium CHKN Downloader">
+
+<span class="badge">WINDOWS TOOL</span>
+
+</div>
+
+
+<div class="tool-info">
+
+<div class="tool-top">
+
+<div class="tool-icon">
+DL
+</div>
+
+<div class="tool-copy">
+
+<h3>Premium CHKN Downloader</h3>
+
+<p>
+Discover product revisions, download CHKN packages and extract product media from one focused desktop tool.
+</p>
+
+<div class="meta">
+<span>WINDOWS 10/11</span>
+<span>64-BIT</span>
+<span>v1.0</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="tool-actions">
+
+<button class="btn btn-primary">
+DETAILS
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+
+</div>
+
 </section>
+
 </main>
-<footer><div class="footer-inner"><div class="footer-brand">DESTINY SHOP ♡</div><div class="footer-note">EXCLUSIVE IMVU COLLECTION<br>Independent creator shop. Not affiliated with or endorsed by IMVU.</div></div></footer>
+
+
+<footer>
+
+<div class="footer-inner">
+
+<div class="footer-brand">
+DESTINY SHOP ♡
+</div>
+
+<div class="footer-note">
+EXCLUSIVE IMVU COLLECTION<br>
+Independent creator shop. Not affiliated with or endorsed by IMVU.
+</div>
+
+</div>
+
+</footer>
+
+
 <script>
-const pages=[...document.querySelectorAll('.page')],tabs=[...document.querySelectorAll('.tab-btn')];
-function enterSite(){document.getElementById('ageGate').style.display='none';sessionStorage.setItem('destinyAgeOk','1')}
-function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.page===id));history.replaceState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'})}
-tabs.forEach(btn=>btn.addEventListener('click',()=>showPage(btn.dataset.page)));
-if(sessionStorage.getItem('destinyAgeOk')==='1')document.getElementById('ageGate').style.display='none';
-const start=location.hash.replace('#','');if(['home','rooms','triggers','poses','tools'].includes(start))showPage(start);
+
+const pages=[...document.querySelectorAll('.page')],
+tabs=[...document.querySelectorAll('.tab-btn')];
+
+function enterSite(){
+
+document.getElementById('ageGate').style.display='none';
+
+sessionStorage.setItem('destinyAgeOk','1');
+
+}
+
+function showPage(id){
+
+pages.forEach(p=>p.classList.toggle('active',p.id===id));
+
+tabs.forEach(t=>t.classList.toggle('active',t.dataset.page===id));
+
+history.replaceState(null,'','#'+id);
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+}
+
+tabs.forEach(btn=>
+btn.addEventListener('click',()=>showPage(btn.dataset.page))
+);
+
+if(sessionStorage.getItem('destinyAgeOk')==='1')
+document.getElementById('ageGate').style.display='none';
+
+const start=location.hash.replace('#','');
+
+if(
+['home','rooms','triggers','poses','tools'].includes(start)
+)
+showPage(start);
+
 </script>
-</body></html>
+
+</body>
+</html>
